@@ -3,12 +3,12 @@ import {
   Text,
   View,
   Dimensions,
-  Image,
+  // Image,
   TouchableOpacity,
 } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import { MaterialIcons } from "@expo/vector-icons";
 import * as Animatable from "react-native-animatable";
 const SplashScreen = (props) => {
   return (
@@ -36,7 +36,7 @@ const SplashScreen = (props) => {
               style={styles.singIn}
             >
               <Text style={styles.textSign}>Get Started</Text>
-              <MaterialIcons name="navigate-next" color={"white"} size={20} />
+              <MaterialIcons name="arrow-forward-ios" size={18} color="white" />
             </LinearGradient>
           </TouchableOpacity>
         </View>

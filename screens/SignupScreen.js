@@ -8,8 +8,8 @@ import {
   StatusBar,
 } from "react-native";
 import React, { useState } from "react";
-import FontAwsome from "react-native-vector-icons/FontAwesome";
-import Feather from "react-native-vector-icons/Feather";
+import { FontAwesome } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 import * as Animatable from "react-native-animatable";
 import { LinearGradient } from "expo-linear-gradient";
 const SigninScreen = (props) => {
@@ -75,7 +75,7 @@ const SigninScreen = (props) => {
       <Animatable.View animation={"fadeInUpBig"} style={styles.footer}>
         <Text style={styles.text_footer}>Email</Text>
         <View style={styles.action}>
-          <FontAwsome name="user-o" color={"#05375a"} size={20} />
+          <FontAwesome name="user-o" color={"#05375a"} size={20} />
           <TextInput
             placeholder="Your Email"
             style={styles.textInput}
